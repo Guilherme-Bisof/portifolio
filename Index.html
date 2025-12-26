@@ -3,78 +3,235 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portifólio | Guilherme Bisof</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portifólio</title>
   </head>
-
   <body>
-    <nav class="navegação">
-      <ul class="menu">
-        <li>
-          <a href="#inicio">Início</a>
-        </li>
-        <li>
-          <a href="#sobre">Sobre</a>
-        </li>
-        <li>
-          <a href="#projetos">Projetos</a>
-        </li>
-        <li>
-          <a href="#contato">Contato</a>
-        </li>
-      </ul>
-    </nav>
+    <header>
+      <h1>Guilherme <span>Bisof</span></h1>
+      <nav>
+        <ul aria-label="Navegação Primária" class="nav-primaria">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <i class="fa-solid fa-bars"></i>
+    </header>
 
-    <main id="inicio" class="cabecalho">
-        <div>
-            <img src="./img/" alt="Foto de Guilherme Bisof" class="foto-perfil">
-            <h1>Guilherme Bisof</h1>
-            <p>Desenvolvedor Front End</p>
+    <section
+      aria-label="seção curriculo download guilherme"
+      class="section-div"
+    >
+      <div>
+        <h2>Hi There, I'm Guilherme</h2>
+        <h2 class="digitando">Web Developer and UX/UI Designer</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+          consequuntur nisi quia, ducimus sapiente porro beatae ipsam maxime
+          possimus consequatur.
+        </p>
+        <a href="#">Download CV</a>
+      </div>
+      <img src="img/Guilherme.jpg" alt="Fogo Guilherme" />
+    </section>
+
+    <main>
+      <article aria-label="seção sobre mim" class="sobre">
+        <div class="sobre_titulo">
+          <h1>About Me</h1>
+          <p>My Professional Profile</p>
+          <div aria-label="Seção apenas de ilustrações de botões">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
+        <img src="img/Guilherme.jpg" alt="Imagem Guilherme" />
+        <div class="sobre_conteudo">
+          <div class="sobre_texto">
+            <h1>I'm Guilherme Bisof</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis repellat, corrupti vel aliquid rem ipsum quis voluptas
+              voluptates. Nulla laborum perspiciatis necessitatibus sit eveniet
+              qui dignissimos saepe a dolore non.
+            </p>
+          </div>
+          <div class="sobre_info">
+            <p>
+              <i class="fa-brands fa-linkedin"></i
+              ><a href="https://www.linkedin.com/in/guilhermebisof/"
+                >Linkedin</a
+              >
+            </p>
+            <p>
+              <i class="fa-brands fa-github"></i
+              ><a href="https://github.com/Guilherme-Bisof">GitHub</a>
+            </p>
+            <p><i class="fa-sharp fa-solid fa-laptop-code"></i>Open to Work</p>
+            <p>
+              <i class="fa-solid fa-location-dot"></i>Address: Tatui, Brazil
+            </p>
+            <p>
+              <i class="fa-sharp fa-solid fa-globe"></i>Spoken Languages:
+              Portuguese, English
+            </p>
+            <p>
+              <i class="fa-solid fa-envelope"></i>Email: gui_bisof@hotmail.com
+            </p>
+          </div>
+        </div>
+      </article>
     </main>
 
-    <section id="sobre" class="sobre">
-        <h2 class="sobre-titulo">Sobre Mim</h2>
-        <div class="sobre-caixa">
-            <p class="sobre-paragrafo">Olá! Sou um desenvolvedor front-end apaixonado por criar experiências web únicas e memoráveis. Combino código limpo com design moderno para desenvolver sites que não só funcionam perfeitamente, mas também impressionam visualmente.</p>
+    <section class="services">
+      <div class="sobre_titulo">
+        <h1>About Me</h1>
+        <p>Professional Profile - There is About me</p>
+        <div aria-label="Seção apenas de ilustrações de botões">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+      </div>
+      <div class="my_services">
+        <ul aria-label="Navegação secundaria">
+          <li>
+            <i class="fa-sharp fa-solid fa-pen-to-square"></i>
+            <h3>Web Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+              illum.
+            </p>
+          </li>
+          <li>
+            <i class="fa-solid fa-laptop"></i>
+            <h3>Web Developer</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+              illum.
+            </p>
+          </li>
+          <li>
+            <i class="fa-brands fa-html5"></i>
+            <h3>HTML</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+              illum.
+            </p>
+          </li>
+          <li>
+            <i class="fa-solid fa-database"></i>
+            <h3>Database Management</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+              illum.
+            </p>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-desktop"></i>
+            <h3>Desktop Development</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+              illum.
+            </p>
+          </li>
+          <li>
+            <i class="fa-sharp fa-solid fa-palette"></i>
+            <h3>UX/UI</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+              illum.
+            </p>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section id="projetos" class="projetos">
-        <h2 class="projetos-titulo">Meus Projetos</h2>
-        <div class="projetos-caixa">
-            <div class="projetos-card">
-                <img src="./img/" alt="Projeto 1" class="projetos-image">
-                <h3 class="info-projetos">Loja de carros</h3>
-                <p class="paragrafo-projetos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias saepe dolore optio voluptatum nostrum veniam accusantium neque ipsam ad eum? Dolorem non temporibus excepturi beatae qui inventore eius illum placeat.</p>
-
-            </div>
-            <div class="projetos-card">
-                <img src="./img/" alt="Projeto 1" class="projetos-image">
-                <h3 class="info-projetos">Página de Viagens</h3>
-                <p class="paragrafo-projetos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias saepe dolore optio voluptatum nostrum veniam accusantium neque ipsam ad eum? Dolorem non temporibus excepturi beatae qui inventore eius illum placeat.</p>
-
-            </div>
-            <div class="projetos-card">
-                <img src="./img/" alt="Projeto 1" class="projetos-image">
-                <h3 class="info-projetos">Microsoft</h3>
-                <p class="paragrafo-projetos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias saepe dolore optio voluptatum nostrum veniam accusantium neque ipsam ad eum? Dolorem non temporibus excepturi beatae qui inventore eius illum placeat.</p>
-
-            </div>
+    <div class="my_resume">
+      <div class="sobre_titulo">
+        <h1>My Resume</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div aria-label="Seção apenas de ilustrações de botões">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-    </section>
+      </div>
 
-    <section id="contatos" class="contatos">
-        <h2 class="contatos-titulo">Contato</h2>
-        <form class="formulario-contato" id="formulario">
-            <div class="nome-form">
-                <input placeholder="Nome" class="campo-form">
-            </div>
-            <div class="grupo-form">
-                <textarea class="text-form" placeholder="Digite sua Mensagem"></textarea>
-            </div>
-        </form>
-    </section>
+      <div class="resume_generico">
+        <h2 class="experience">
+          <i class="fa-solid fa-handshake"></i>EXPERIENCE
+        </h2>
+        <div class="experience_content">
+          <div>
+            <span>2024 - CURRENT</span>
+            <h3>Developer - Sistema de Gestão</h3>
+            <h4>Sistema de Gestão de Veículos (Offline-First)</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, et.
+            </p>
+          </div>
+          <div>
+            <span>2024 - CURRENT</span>
+            <h3>Developer - Sistema de Gestão</h3>
+            <h4>Restorative Justice System (TJSP)</h4>
+            <p>
+              End-to-end development of a complex web platform for judicial case management. Built with PHP and MySQL, covering the entire stack from database modeling to the responsive user interface.
+            </p>
+          </div>
+          <div>
+            <span>2024 - CURRENT</span>
+            <h3>Developer - Sistema de Gestão</h3>
+            <h4>ConnectU - Academic Platform</h4>
+            <p>
+              An institutional social network designed to modernize campus communication. Built with Next.js 14 and Node.js, ConnectU features a responsive mobile-first feed, JWT authentication, and a real-time interaction system for students and faculty.
+            </p>
+          </div>
 
+          <ul>
+            <li>
+              <i class="fa-solid fa-sharp fa-circle"></i>
+              <i class="fa-solid fa-sharp fa-circle"></i>
+              <i class="fa-solid fa-sharp fa-circle"></i>
+            </li>
+          </ul>
+        </div>
+        <h2 class="education"><i class="fa-solid fa-book"></i>EDUCATION</h2>
+        <div class="education_content">
+          <div>
+            <span>2024-2027</span>
+            <h3>Technologist IT Management - Fatec Tatuí</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, vel?</p>
+          </div>
+          <div>
+            <span>2025-2028</span>
+            <h3>Technologist Systems Analysis and Development - Unicesumar</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, ad?</p>
+          </div>
+          <ul>
+            <li>
+              <i class="fa-solid fa-sharp fa-circle"></i>
+              <i class="fa-solid fa-sharp fa-circle"></i>
+              <i class="fa-solid fa-sharp fa-circle"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
