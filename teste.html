@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guilherme Bisof | Front-end Developer</title>
+
+  <style>
+    :root {
+      --purple: #8b5cf6;
+      --dark: #0f0f0f;
+      --gray: #a1a1aa;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
+
+    body {
+      background: var(--dark);
+      color: var(--white);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    header {
+      padding: 24px 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #1f1f1f;
+    }
+
+    header h1 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    nav a {
+      margin-left: 24px;
+      font-size: 14px;
+      color: var(--gray);
+    }
+
+    nav a:hover {
+      color: var(--white);
+    }
+
+    section {
+      padding: 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 16px;
+    }
+
+    .hero h2 span {
+      color: var(--purple);
+    }
+
+    .hero p {
+      color: var(--gray);
+      max-width: 500px;
+      margin-bottom: 32px;
+    }
+
+    .hero .buttons a {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 6px;
+      margin-right: 16px;
+      font-size: 14px;
+    }
+
+    .btn-primary {
+      background: var(--purple);
+      color: var(--white);
+    }
+
+    .btn-secondary {
+      border: 1px solid var(--gray);
+      color: var(--white);
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: 12px;
+      filter: grayscale(100%);
+    }
+
+    .section-title {
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .project-card {
+      background: #141414;
+      padding: 24px;
+      border-radius: 10px;
+      border: 1px solid #1f1f1f;
+    }
+
+    .project-card h3 {
+      margin-bottom: 8px;
+    }
+
+    .project-card p {
+      font-size: 14px;
+      color: var(--gray);
+      margin-bottom: 16px;
+    }
+
+    .project-card span {
+      font-size: 12px;
+      color: var(--purple);
+    }
+
+    .stack {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+    }
+
+    
+    .stack div {
+      background: #141414;
+      padding: 24px;
+      border-radius: 10px;
+      border: 1px solid #1f1f1f;
+    }
+
+    .stack h4 {
+      margin-bottom: 12px;
+    }
+
+    .stack ul {
+      list-style: none;
+    }
+
+    .stack li {
+      font-size: 14px;
+      color: var(--gray);
+      margin-bottom: 6px;
+    }
+
+    .about p {
+      max-width: 700px;
+      color: var(--gray);
+    }
+
+    footer {
+      padding: 40px;
+      text-align: center;
+      border-top: 1px solid #1f1f1f;
+      color: var(--gray);
+      font-size: 14px;
+    }
+
+    footer a {
+      margin: 0 8px;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        padding: 24px;
+      }
+
+      section {
+        padding: 60px 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Guilherme <span style="color: var(--purple)">Bisof</span></h1>
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#stack">Stack</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h2>Front-end <span>Developer</span></h2>
+    <p>
+      I build clean, responsive and accessible web interfaces,
+      focusing on performance, usability and scalability.
+    </p>
+    <div class="buttons">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="cv.pdf" class="btn-secondary">Download CV</a>
+    </div>
+  </div>
+
+  <img src="./img/Guilherme.jpg" alt="Guilherme Bisof">
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects">
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>Personal portfolio built with responsive layout and clean UI.</p>
+      <span>HTML • CSS • JavaScript</span>
+    </div>
+
+    <div class="project-card">
+      <h3>Landing Page</h3>
+      <p>High-conversion landing page focused on UX and performance.</p>
+      <span>HTML • CSS • UX</span>
+    </div>
+
+    <div class="project-card">
+      <h3>Dashboard UI</h3>
+      <p>Interface design for data visualization and user interaction.</p>
+      <span>UI • Front-end</span>
+    </div>
+  </div>
+</section>
+
+<section id="stack">
+  <h2 class="section-title">Tech Stack</h2>
+  <div class="stack">
+    <div>
+      <h4>Frontend</h4>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Frameworks</h4>
+      <ul>
+        <li>React</li>
+        <li>Bootstrap</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Tools</h4>
+      <ul>
+        <li>Git & GitHub</li>
+        <li>VS Code</li>
+        <li>Figma</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2 class="section-title">About</h2>
+  <p>
+    Front-end developer focused on building functional,
+    accessible and user-centered interfaces.
+    I enjoy transforming ideas into clean and scalable solutions.
+  </p>
+</section>
+
+<footer id="contact">
+  <p>
+    <a href="https://github.com/">GitHub</a> |
+    <a href="https://linkedin.com/">LinkedIn</a> |
+    <a href="mailto:guilherme@email.com">Email</a>
+  </p>
+  <p>© 2026 Guilherme Bisof</p>
+</footer>
+
+</body>
+</html>
