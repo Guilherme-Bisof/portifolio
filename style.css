@@ -27,11 +27,14 @@ body {
 /* HEADER */
 
 header {
-  background-color: #000000;
+  background-color: var(--dark);
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 header h1 {
@@ -89,8 +92,10 @@ header .nav-primaria li a:hover::after {
 .section-div div {
   margin-top: 120px;
   align-self: start;
-  display: grid;
+  display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .section-div h2 {
@@ -106,12 +111,15 @@ header .nav-primaria li a:hover::after {
 }
 
 .section-div div a {
-  justify-self: start;
+  justify-content: center;
   color: #fff;
   padding: 15px 40px;
   border-radius: 5px;
   border: 2px solid white;
+  text-decoration: none;
+  text-align: center;
 }
+
 
 .section-div div a:hover{
   background-color: var(--purple);
@@ -727,9 +735,26 @@ main .sobre {
 }
 
 .project-card a {
-  color: inherit;
+  display: inline-block;
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 10px;
   text-decoration: none;
+  transition: background 0.3s;
 }
+
+.project-card a:hover {
+  background: var(--purple);
+}
+
+.project-card a i {
+  margin-left: 5px;
+  font-size: 14px; /* Ajuste o tamanho se quiser menor */
+}
+
 
 .project-card span{
   font-size: 25px;
